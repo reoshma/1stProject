@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renan Oshima" />
+    <script src="https://kit.fontawesome.com/162c56a609.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styletest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons8-my-computer-50.png">
+    <title>Renan Oshima</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="icons8-my-computer-50 (1).png" alt="Logo Renan Oshima" width="70" height="70"
+            onclick="changeImage(this)"/>
+            
+            <script>
+                function changeImage(image) {
+                    image.src='icons8-my-computer-50.png';                  
+                }
+            </script>
+
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/reoshma">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:renanoshima@gmail.com">email</a>
+            </li>
+            <li><a target="_blank" href="https://wa.me/11943998497">whatsapp</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Renan Oshima</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <!--<div id="arrow">
+                <img src="open-folder.png" width="90px">-->
+            <!--<i class="fa-solid fa-chevron-right"></i>-->
+
+            <button id="folder" onclick="myFunction()">
+                <img type="image" src="open-folder.png" alt="minimized" width="70" height="70">
+            </button>
+
+
+            <div id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta similique suscipit harum dignissimos
+                    sit error esse excepturi. Quidem laborum recusandae quae natus reiciendis odio laudantium
+                    perferendis provident? Ipsa, at vel.
+                </p>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("about"); if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else { x.style.display = "none";}
+                }
+
+            </script>
+
+            <style>
+                .hideClass {
+                    display: none;
+                }
+            </style>
+
+            <div class="form">
+                <div>
+                    <p>Entre em contato:</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Mande seu email!">
+                    <button> enviar!</button>
+        </section>
+
+    </main>
+
+</body>
+ 
+</html>

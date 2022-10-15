@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:JetBrains Mono, monospace;
+    /*color: #cd3f25*/
+    color: rgba(63, 68, 77, 0.904)
+}
+
+/* Links */
+
+ul {
+    list-style: none;
+    font-size: 17px;
+    line-height: 1rem; 
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Background*/
+
+body {
+    /*background-image: url(./pexels-la-miko-3616764.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background: url(./pexels-la-miko-3616764.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+
+    background-color: #fff;
+    /*background-image: linear-gradient(to top, #ece9e6, #f2eeed, #f6f4f4, #faf9fa, #ffffff);
+    height: 100vh;*/
+}
+
+/* Header/All */
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo */
+
+.logo {
+    cursor: pointer;
+}
+
+/* Links - List*/
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 0px 10px 0px 10px;
+}
+
+header ul li a:hover {
+    color: #000;
+    font-weight: 600;
+    transition: 100ms;
+}
+
+/* Text  Body */
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Name */
+
+.container .name h1 {
+    font-size: 50px;
+    padding: 50px 0px 0px 0px;
+    min-width: auto;
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+
+/* Button - Folder */
+
+#folder {
+    border: none;
+    padding: 5px 10px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 30px;
+    animation: blink 2.5s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* About */
+
+#about {
+    display: none;
+}
+
+#about p {
+    padding: 10px;
+    margin: 10px;
+    font-family:JetBrains Mono, monospace;
+    color: rgba(255, 255, 255, 0.904);
+    font-weight: 570;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: black;
+    text-align: justify;
+}
+
+/* Form */
+
+.form {
+    width: 40%;
+    margin:  auto;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1rem; 
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    padding: 10px;
+    min-width: none;
+}
+
+.form input {
+    width: 40%;
+    min-width: fit-content;
+    border-radius: 0px;
+    border-width: 2px;
+    color:#000;
+    padding: 0px 0px 0px 5px;
+}
+
+/* Form - Button */
+
+.form button {
+    width: 10%;
+    min-width: fit-content;
+    cursor: pointer;
+    background: linear-gradient(to right #dedede, #acadac);
+}
+
+.form button:hover {
+    background-position: left bottom;
+    font-weight: 500;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+
+    #about p {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+    }
+
+}
